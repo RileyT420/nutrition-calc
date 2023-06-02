@@ -9,12 +9,12 @@ html {
   height: 125px;
 }
 
-.container {
-  width: 100%;
+.container-fluid {
   height: 750px;
   border: 1px solid black;
 }
+
 .col {
-    border-style: solid;
+  border-style: solid;
   border-color: green;
 }
