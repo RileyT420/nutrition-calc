@@ -50,10 +50,10 @@ console.log("WEIGHT: " + weight);
 		default:
 			console.log("NONE");
 	}
-2.38
-.2
-.68
-.2
+// 2.38
+// .2
+// .68
+// .2
 	document.getElementById('cals').innerHTML = 'Recommended cals ' + cals;
 });
 
@@ -73,7 +73,7 @@ let bulkingChart = new Chart(bulkChart, {
 				1 * weight,
 				.3 * weight,
 			],
-			backgroundColor: ['#F4F1DE', '#51344D', '#3D405B'],
+			backgroundColor: ['#591F0A', 'red', '#211A1D', 'white'],
 			borderWidth: 1,
 			borderColor: '#777',
 			hoverBorderWidth: 3,
@@ -95,7 +95,7 @@ let cuttingChart = new Chart(cutChart, {
 				.47 * weight,
 				.14 * weight,
 			],
-			backgroundColor: ['#F4F1DE', '#51344D', '#3D405B'],
+			backgroundColor: ['#591F0A', 'red', '#211A1D', 'white'],
 			borderWidth: 1,
 			borderColor: '#777',
 			hoverBorderWidth: 3,
@@ -116,7 +116,7 @@ let maintainChart = new Chart(mainChart, {
 				.68 * weight,
 				.2 * weight,
 			],
-			backgroundColor: ['#F4F1DE', '#51344D', '#3D405B'],
+			backgroundColor: ['#591F0A', 'red', '#211A1D', 'white'],
 			borderWidth: 1,
 			borderColor: '#777',
 			hoverBorderWidth: 3,
