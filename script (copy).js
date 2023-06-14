@@ -41,10 +41,10 @@ console.log("WEIGHT: " + weight);
 			cut.style.display = "none";
 			bulk.style.display = "none";
 			main.style.display = "block";
-      cuttingChart.data.datasets[0].data[0] = 2.38 * weight;
-			cuttingChart.data.datasets[0].data[1] = .2 * weight;
-			cuttingChart.data.datasets[0].data[2] = .68 * weight;
-			cuttingChart.data.datasets[0].data[3] = .2 * weight;
+      maintainChart.data.datasets[0].data[0] = 2.38 * weight;
+			maintainChart.data.datasets[0].data[1] = .2 * weight;
+			maintainChart.data.datasets[0].data[2] = .68 * weight;
+			maintainChart.data.datasets[0].data[3] = .2 * weight;
       maintainChart.update();
 		break;
 		default:
@@ -66,7 +66,7 @@ let bulkingChart = new Chart(bulkChart, {
 	data: {
 		labels: ['carbs', 'fats', 'protein', 'sugars'],
 		datasets: [{
-			label: 'worldwide population in billions',
+			label: 'in grams',
 			data: [
 				3.5 * weight,
 				.3 * weight,
@@ -88,7 +88,7 @@ let cuttingChart = new Chart(cutChart, {
 	data: {
 		labels: ['carbs', 'fats', 'protein', 'sugars'],
 		datasets: [{
-			label: 'worldwide population in billions',
+			label: 'in grams',
 			data: [
 				1.64 * weight,
 				.14 * weight,
@@ -109,7 +109,7 @@ let maintainChart = new Chart(mainChart, {
 	data: {
 		labels: ['carbs', 'fats', 'protein', 'sugars'],
 		datasets: [{
-			label: 'worldwide population in billions',
+			label: 'in grams',
 			data: [
 				2.38 * weight,
 				.2 * weight,

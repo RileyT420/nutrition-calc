@@ -16,13 +16,24 @@ var userGoal = document.getElementById('dropdown').addEventListener("change", up
 // var maintain = document.getElementById('maintain').addEventListener("click", maintain, false);
 // var dropdown = document.getElementById('topdown');
 var weight = document.getElementById('weight');
-
+var carbs = document.getElementById('carbs')
+var fats = document.getElementById('fats')
+var sugars = document.getElementById('sugars')
+var protiens = document.getElementById('protiens')
 
 function bulking() {
 	dropdown.innerHTML = "Bulking";
   weight = weight.value;
 	cals = weight * 23.5;
+  carbs = 3.5 * weight,
+	fats = .3 * weight,
+	protiens = 1 * weight,
+	sugars = .3 * weight,
 	document.getElementById('cals').innerHTML = 'Recommended cals ' + cals;
+  	document.getElementById('carbs').innerHTML = 'Recommended carbs ' + carbs;
+  	document.getElementById('fats').innerHTML = 'Recommended fats ' + fats;
+  document.getElementById('sugars').innerHTML = 'Recommended sugars ' + sugars;
+  document.getElementById('protiens').innerHTML = 'Recommended protiens ' + protiens;
 	// Hide/Show appropriate charts
 	cut.style.display = "none";
 	main.style.display = "none";
@@ -34,7 +45,15 @@ function cutting() {
 	dropdown.innerHTML = "Cutting";
     weight = weight.value;
 	cals = weight * 11;
+  carbs = 1.64 * weight,
+	fats = .14 * weight,
+	protiens = .47 * weight,
+	sugars = .14 * weight,
 	document.getElementById('cals').innerHTML = 'Recommended cals ' + cals;
+   	document.getElementById('carbs').innerHTML = 'Recommended carbs ' + carbs;
+  	document.getElementById('fats').innerHTML = 'Recommended fats ' + fats;
+  document.getElementById('sugars').innerHTML = 'Recommended sugars ' + sugars;
+  document.getElementById('protiens').innerHTML = 'Recommended protiens ' + protiens;
 	// Hide/Show appropriate charts
 	main.style.display = "none";
 	bulk.style.display = "none";
@@ -46,7 +65,15 @@ function maintain() {
 	dropdown.innerHTML = "Maintain";
     weight = weight.value;
 	cals = weight * 16;
+	carbs = 2.38 * weight,
+	fats = .2 * weight,
+	protiens = .68 * weight,
+	sugars = .2 * weight,
 	document.getElementById('cals').innerHTML = 'Recommended cals ' + cals;
+     document.getElementById('carbs').innerHTML = 'Recommended carbs ' + carbs;
+  	document.getElementById('fats').innerHTML = 'Recommended fats ' + fats;
+  document.getElementById('sugars').innerHTML = 'Recommended sugars ' + sugars;
+  document.getElementById('protiens').innerHTML = 'Recommended protiens ' + protiens;
 	// Hide/Show appropriate charts
 	cut.style.display = "none";
 	bulk.style.display = "none";

@@ -3,21 +3,7 @@ html {
 	width: 100%;
 }
 
-.row {
-	border-style: solid;
-	border-color: orange;
-	height: 125px;
-}
 
-.container-fluid {
-	height: 750px;
-	border: 1px solid black;
-}
-
-.col {
-	border-style: solid;
-	border-color: green;
-}
 
 /* #worldChart,
 #borldChart,
